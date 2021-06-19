@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabets Prediction</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>  
+    <div style="color:Blue">
+    <div style="background-color:Orange">
+    
+        <!-- Website Title -->
+    	<div class="container">
+    		<h3 class='container-heading'><span>Diabetes Prediction</span></h3>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<form action="{{ url_for('predict')}}" method="post">
+            <h3>Pregnancies eg. 0</h3><br><input id="first" name="Pregnancies" required="required">
+            <h3>Glucose (mg/dL) eg. 80</h3><br><input id="first" name="Glucose" required="required">
+            <h3>Diastolic BloodPressure (mmHg) eg. 75</h3><br><input id="first" name="BloodPressure" required="required">
+            <h3>SkinThickness (mm) eg. 20</h3><br><input id="first" name="SkinThickness" required="required">
+            <h3>Insulin (U/ml) eg. 80</h3><br><input id="first" name="Insulin" required="required">
+            <h3>BMI (kg/m²) eg. 23.1</h3><br><input id="first" name="BMI" required="required">
+            <h3>DiabetesPedigreeFunction eg. 0.52</h3><br><input id="first" name="DiabetesPedigreeFunction" required="required">
+            <h3>Age eg. 25 </h3><br><input id="first" name="Age" required="required">
+            <h3><input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+        	
+    	  </div>
+        <!-- Footer -->
+        <div class='footer'>
+        </div>
+            <p class='footer-description'>Thanks - Devanshi & Shrushti</p>
+        </div>
+    </body>
+    
+</html>
